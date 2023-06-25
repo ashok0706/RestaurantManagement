@@ -1,4 +1,4 @@
-## **Restaurant management service API**
+## **Restaurant management**
 
 ### Frame Works And Language Used 
 ---
