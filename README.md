@@ -14,19 +14,19 @@
 ### Data Flow
 ----
 1. #### **controller**
-  * AdminController
+  * RestarauntController
 
-  PathS-- 1. Admin/signUp
+  PathS-- 1. /getRestaurant/{id} 
 
-         2. Admin/addfoodItems/{email}
+         2. /getAllRestaurant 
+         
+         3. /updateRestaurant 
 
-  Admin can directly add Food item 
+         4. /deleteRestaurant
 
-  * VisitorController
+         5 . /creatReastaurant
 
-  Paths -- 1. visitor/signUp
-
-          2. oder
+         
 
 for This function i have used ***@POSTMAPPING , @REQUESTBODY, @PATHVARIABLE*** at methode level
  
@@ -35,9 +35,8 @@ for This function i have used ***@POSTMAPPING , @REQUESTBODY, @PATHVARIABLE*** a
 
 
 2. #### Service
-  * AdminServise
+  * ReastaurantSeravise
 
-  * VisitorServise
 
 
 These All classer used for Busseness logic operations
@@ -45,25 +44,16 @@ are Annatated with
 ***@service***
 
 3. #### Model
- * Admin
+ * Restaurant
 
-* Visitor
-
-* Order
-
-* Fooditems
 
   These all are Entity classes 
   every class annotated with ***@Entity, @Data, @NoArgConstructor, @Id  and used @valid Email , id***
 
 4. #### Repository
- * AdminRepo
+ * RestaurantRepo
 
-  * VisitorRepo
-
-  * OrderRepo
-
-  * FoodItemRepo
+  
 
   
 
@@ -78,10 +68,9 @@ are Annatated with
  ### Summary
 
  This project is designed for 
- * visitor can Order food
- * Admin can add fooditems.
+ * restaurant CRUD Operation
  
-The  operations on various tables wich are internally connected as OnetoOne, ManytoOne, ManytoMany  form.
+The  operations on  tables wich are RDBMS. 
 
 
 
